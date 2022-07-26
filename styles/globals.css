@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .user-icon {
+    @apply relative flex flex-col items-center p-3 text-center text-base h-10 w-10 shadow-lg mx-2 bg-white rounded-full hover:bg-primary hover:text-white hover:opacity-100 transition-all ease-in-out duration-500 cursor-pointer;
+  }
+
+  .user-tooltip {
+    @apply absolute capitalize top-0 bg-primary text-white text-sm z-10 py-1 px-2 rounded-lg scale-0 transition-all duration-500 origin-bottom;
+  }
+
+  .banner {
+    @apply relative h-1/5 truncate after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-darkblack after:opacity-50;
+  }
+
+  .circle {
+    @apply absolute w-3/5 h-full z-10 top-0 left-0 shadow-xl origin-left;
+    clip-path: circle(54.7% at 16% 51%);
+  }
+
+  .circle-textbox {
+    @apply absolute w-full h-full top-[20%] left-[35%] -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .title {
+    @apply uppercase text-2xl text-secondary;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  background-color: #ecebeb;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  @apply hover:text-primary hover:drop-shadow-md transition-all ease-in-out duration-500;
+}
+
+* {
+  box-sizing: border-box;
+}
