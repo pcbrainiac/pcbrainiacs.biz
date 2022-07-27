@@ -12,8 +12,10 @@ export default function Home() {
         <link rel="canonical" href="https://www.pcbrainiacs.biz/" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container mt-5 px-[5%]">
-        <h1 className="text-3xl font-bold text-secondary shadow-lg">Home</h1>
+      <div className="">
+        <h1 className="text-3xl font-bold text-secondary drop-shadow-lg">
+          Home
+        </h1>
       </div>
     </div>
   );
